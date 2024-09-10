@@ -41,7 +41,8 @@ const useCountryDashboard = () => {
     if (countries.length) {
       loadMoreCountries();
     }
-  }, [page, countries, loadMoreCountries]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page, countries]);
 
   // Handle Searching by country name or capital
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
