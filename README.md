@@ -5,7 +5,7 @@ Country Dashboard
 
 This project is a Country Dashboard application built with React, Next.js, and TypeScript. It allows users to search, sort, and paginate through a list of countries.
 
-Application can be Viewed at [Application](https://country-dashboard-sigma.vercel.app/)
+Application can be Viewed at [https://country-dashboard-sigma.vercel.app/](https://country-dashboard-sigma.vercel.app/)
 
 Table of Contents
 -----------------
