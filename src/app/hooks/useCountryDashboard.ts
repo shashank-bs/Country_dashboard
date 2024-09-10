@@ -34,14 +34,14 @@ const useCountryDashboard = () => {
       ...prevCountries,
       ...newCountries,
     ]);
-  }, [countries, page]);
+  }, [countries, page, displayedCountries, searchQuery]);
 
   // Load more countries when the page state changes
   useEffect(() => {
     if (countries.length) {
       loadMoreCountries();
     }
-  }, [page, countries]);
+  }, [page, countries, loadMoreCountries]);
 
   // Handle Searching by country name or capital
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -7,14 +7,15 @@ interface CountryContextProps {
   setCountries: React.Dispatch<React.SetStateAction<Country[]>>;
 }
 
+/** Not using this Context at the time */
 const CountryContext = createContext<CountryContextProps | undefined>(undefined);
 
-export const CountryProvider: React.FC = ({ children }) => {
+export const CountryProvider: React.FC = ({  }) => {
   const [countries, setCountries] = useState<Country[]>([]);
 
   return (
     <CountryContext.Provider value={{ countries, setCountries }}>
-      {children}
+      {}
     </CountryContext.Provider>
   );
 };
