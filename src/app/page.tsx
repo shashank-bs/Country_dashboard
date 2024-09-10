@@ -71,7 +71,6 @@ const HomePage = () => {
       </Box>
       <div
         style={{
-          display: "flex",
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
