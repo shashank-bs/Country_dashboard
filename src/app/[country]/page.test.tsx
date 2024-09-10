@@ -1,5 +1,5 @@
 // src/app/[country]/page.test.tsx
-import { getByTestId, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { useParams } from "next/navigation";
 import CountryPage from "./page";
@@ -16,8 +16,6 @@ jest.mock("../hooks/useCountries", () => ({
   __esModule: true,
   default: jest.fn(),
 }));
-
-const mockedUseCountries = useCountries as jest.Mock;
 
 const mockCountry: Country = {
   name: {

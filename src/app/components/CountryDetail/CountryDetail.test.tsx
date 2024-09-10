@@ -5,7 +5,7 @@ import CountryDetail from "./CountryDetail";
 import { Country } from "../../types/Country";
 
 describe("CountryDetail Component", () => {
-  let mockCountry: Country = {
+  const mockCountry: Country = {
     name: {
       common: "United States",
       official: "",
