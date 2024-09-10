@@ -1,36 +1,176 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ 
 
-## Getting Started
+Country Dashboard
+=================
 
-First, run the development server:
+This project is a Country Dashboard application built with React, Next.js, and TypeScript. It allows users to search, sort, and paginate through a list of countries.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Application can be Viewed at [Application](https://country-dashboard-sigma.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Table of Contents
+-----------------
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   [Setup Instructions](#setup-instructions)
+*   [Folder Structure](#folder-structure)
+*   [Component Details](#component-details)
+*   [Testing Information](#testing-information)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Setup Instructions
+------------------
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+*   Node.js (>= 14.x)
+*   npm (>= 6.x) or yarn (>= 1.x)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  Clone the repository:
+    
+        git clone https://github.com/shashank-bs/Country_dashboard.git
+        cd Country_dashboard
+    
+2.  Install dependencies:
+    
+        npm install
+        # or
+        yarn install
+    
+3.  Run the development server:
+    
+        npm run dev
+        # or
+        yarn dev
+    
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    
 
-## Deploy on Vercel
+### Build for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To create an optimized production build:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    npm run build
+    # or
+    yarn build
+
+### Linting
+
+To run the linter:
+
+    npm run lint
+    # or
+    yarn lint
+
+Folder Structure
+----------------
+
+    .
+    ├── .eslintrc.json
+    ├── .gitignore
+    ├── .next/
+    ├── .swc/
+    ├── coverage/
+    ├── jest.config.js
+    ├── jest.setup.js
+    ├── next-env.d.ts
+    ├── next.config.mjs
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── README.md
+    ├── src/
+    │   ├── app/
+    │   │   ├── components/
+    │   │   │   ├── CountryCard/
+    │   │   │   │   ├── CountryCard.tsx
+    │   │   │   │   ├── CountryCard.test.tsx
+    │   │   │   ├── CountryDetail/
+    │   │   │   │   ├── CountryDetail.tsx
+    │   │   │   │   ├── CountryDetail.test.tsx
+    │   │   │   ├── CountryGrid/
+    │   │   │   │   ├── CountryGrid.tsx
+    │   │   │   │   ├── CountryGrid.test.tsx
+    │   │   │   └── index.ts
+    │   │   ├── [country]/
+    │   │   │   ├── page.tsx
+    │   │   │   └── useCountryDashboard.test.tsx
+    │   │   ├── hooks/
+    │   │   │   ├── useCountryDashboard.ts
+    │   │   │   └── useCountryDashboard.test.ts
+    │   │   │   ├── useCountryCountries.ts
+    │   │   │   └── useCountryCountries.test.ts
+    │   │   ├── page.tsx
+    │   │   ├── layout.tsx
+    │   │   ├── global.css
+    │   │   ├── types/
+    │   │   │   └── Country.ts
+    │   │   └── utils/
+    │           └── countriesUtils.ts
+    ├── tailwind.config.ts
+    └── tsconfig.json
+    
+
+Component Details
+-----------------
+
+### [src/app/components/CountryCard/CountryCard.tsx](src/app/components/CountryCard/CountryCard.tsx)
+
+This component displays the details of a single country, including its name, population, region, and flag.
+
+### [src/app/components/CountryGrid/CountryGrid.tsx](src/app/components/CountryGrid/CountryGrid.tsx)
+
+This component is responsible for displaying a grid of `CountryCard` components.
+
+### [src/app/components/CountryDetail/CountryDetail.tsx](src/app/components/CountryDetail/CountryDetail.tsx)
+
+This component provides a detail info on Country
+
+### [src/app/hooks/useCountries.ts](src/app/hooks/useCountries.ts)
+
+This custom hook manages the api call to get countries.
+
+### [src/app/hooks/useCountryDashboard.ts](src/app/hooks/useCountryDashboard.ts)
+
+This custom hook manages the state and logic for the Country Dashboard, including fetching countries, handling search, sorting, and pagination.
+
+### [src/app/page.tsx](src/app/page.tsx)
+
+This is the main page component that uses the `useCountryDashboard` hook to display the country dashboard. It includes search and sort functionality and uses `InfiniteScroll` for pagination.
+
+### [src/utils/countriesUtils.ts](src/utils/countriesUtils.ts)
+
+This utility file contains functions for sorting and searching countries by name or capital.
+
+Testing Information
+-------------------
+
+### Running Tests
+
+To run the tests:
+
+    npm test
+    # or
+    yarn test
+
+### Test Configuration
+
+The test configuration is set up using Jest with the following configuration in [jest.config.js](jest.config.js):
+
+    const nextJest = require("next/jest");
+    
+    const createJestConfig = nextJest({
+      dir: "./",
+    });
+    
+    const config = {
+      coverageProvider: "v8",
+      testEnvironment: "jsdom",
+      setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+      preset: "ts-jest",
+    };
+    
+    module.exports = createJestConfig(config);
+
+License
+-------
+
+This project is licensed under the MIT License.
