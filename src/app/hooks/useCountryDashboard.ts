@@ -27,7 +27,7 @@ const useCountryDashboard = () => {
       ? displayedCountries.slice(start, end)
       : countries.slice(start, end);
     const hasMoreCountries = searchQuery
-      ? displayedCountries.splice(end).length > 0
+      ? displayedCountries.slice(end).length > 0
       : countries.slice(end).length > 0;
     setHasMore(hasMoreCountries);
     setDisplayedCountries((prevCountries) => [
@@ -51,6 +51,7 @@ const useCountryDashboard = () => {
     const filtered = searchCountriesByNameOrCapital(countries, query);
     setDisplayedCountries(filtered); // Update displayedCountries based on search results
     setPage(1); // Reset pagination when searching
+    setHasMore(false);
   };
 
   // Handle Sorting (asc or desc by population)
