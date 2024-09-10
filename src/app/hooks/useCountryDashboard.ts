@@ -56,7 +56,7 @@ const useCountryDashboard = () => {
 
   // Handle Sorting (asc or desc by population)
   const handleSort = (order: "asc" | "desc") => {
-    const sorted = sortCountriesByPopulation(displayedCountries, order);
+    const sorted = sortCountriesByPopulation(countries, order);
     setDisplayedCountries([...sorted]); // Update the displayed countries list
   };
 
