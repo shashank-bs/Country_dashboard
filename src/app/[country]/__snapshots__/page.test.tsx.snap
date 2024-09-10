@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryPage Component matches snapshot when country is found 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <div
+      class="MuiBox-root css-1wcaknn"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h4 css-10zsxzp-MuiTypography-root"
+      >
+        United States
+      </h4>
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-8zgow4-MuiTypography-root"
+      >
+        Capital: Washington, D.C.
+      </h6>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+      >
+        Population: 33,10,00,000
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+      >
+        Region: Americas
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+      >
+        Timezones: 
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+      >
+        Languages: 
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+      >
+        Currencies: 
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CountryPage Component matches snapshot when country is not found 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-14h3iqr"
+  >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 css-1vcvfao-MuiTypography-root"
+    >
+      Country not found
+    </h5>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CountryPage Component matches snapshot when loading 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-14h3iqr"
+  >
+    <span
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+      role="progressbar"
+      style="width: 40px; height: 40px;"
+    >
+      <svg
+        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+          cx="44"
+          cy="44"
+          fill="none"
+          r="20.2"
+          stroke-width="3.6"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;

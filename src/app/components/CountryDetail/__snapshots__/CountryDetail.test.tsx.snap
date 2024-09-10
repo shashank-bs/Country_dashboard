@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryDetail Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-1wcaknn"
+  >
+    <h4
+      class="MuiTypography-root MuiTypography-h4 css-10zsxzp-MuiTypography-root"
+    >
+      United States
+    </h4>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 css-8zgow4-MuiTypography-root"
+    >
+      Capital: Washington, D.C.
+    </h6>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+    >
+      Population: 33,10,00,000
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+    >
+      Region: Americas
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+    >
+      Timezones: UTC-05:00
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+    >
+      Languages: English
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1edfpdg-MuiTypography-root"
+    >
+      Currencies: United States dollar
+    </p>
+  </div>
+</DocumentFragment>
+`;

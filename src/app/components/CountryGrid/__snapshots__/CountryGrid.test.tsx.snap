@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryGrid Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-ngvvop-MuiGrid2-root"
+  >
+    <div
+      class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-xs-12 MuiGrid2-grid-sm-6 MuiGrid2-grid-md-4 MuiGrid2-grid-lg-3 css-5zitc8-MuiGrid2-root"
+    >
+      <a
+        href="/united%20states"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1rzkyto-MuiPaper-root-MuiCard-root"
+          data-testid="country-card"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Flag of United States"
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="https://example.com/flag-us.svg"
+            style="color: transparent; object-fit: cover; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="150"
+          />
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-13y79c5-MuiTypography-root"
+            >
+              United States
+            </div>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Capital: Washington, D.C.
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Population: 33,10,00,000
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Region: Americas
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-xs-12 MuiGrid2-grid-sm-6 MuiGrid2-grid-md-4 MuiGrid2-grid-lg-3 css-5zitc8-MuiGrid2-root"
+    >
+      <a
+        href="/canada"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1rzkyto-MuiPaper-root-MuiCard-root"
+          data-testid="country-card"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <img
+            alt="Flag of Canada"
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="https://example.com/flag-ca.svg"
+            style="color: transparent; object-fit: cover; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="150"
+          />
+          <div
+            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-13y79c5-MuiTypography-root"
+            >
+              Canada
+            </div>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Capital: Ottawa
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Population: 3,77,42,154
+            </p>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-atovpb-MuiTypography-root"
+            >
+              Region: Americas
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
